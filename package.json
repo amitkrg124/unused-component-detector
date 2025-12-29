@@ -1,18 +1,25 @@
 {
   "name": "unused-component-detector",
   "displayName": "Unused React Component Detector",
-  "description": "Find and safely delete unused React components",
+  "description": "Find and safely delete unused React components from your codebase",
   "version": "1.0.0",
-  "publisher": "amit-kumar",
+  "publisher": "amitkrg124",
+  "author": {
+    "name": "amitkrg124"
+  },
   "engines": {
-    "vscode": "^1.74.0"
+    "vscode": "^1.80.0"
   },
   "categories": [
+    "Programming Languages",
+    "Linters",
     "Other"
   ],
-  "activationEvents": [
-    "onStartupFinished"
-  ],
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -56,8 +63,9 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/amitkrg124/unused-component-detector.git"
   },
+  "homepage": "https://github.com/amitkrg124/unused-component-detector",
   "license": "MIT",
   "keywords": [
     "react",
