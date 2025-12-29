@@ -1,0 +1,71 @@
+{
+  "name": "unused-component-detector",
+  "displayName": "Unused React Component Detector",
+  "description": "Find and safely delete unused React components",
+  "version": "1.0.0",
+  "publisher": "amit-kumar",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "unused-component-detector.scan",
+        "title": "Find Unused Components",
+        "category": "Unused Component Detector"
+      },
+      {
+        "command": "unused-component-detector.delete",
+        "title": "Delete Component",
+        "category": "Unused Component Detector"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "unused-component-detector.scan",
+          "when": "true"
+        },
+        {
+          "command": "unused-component-detector.delete",
+          "when": "true"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "build": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "vscode:prepublish": "npm run build",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.74.0",
+    "typescript": "^5.0.0",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.0",
+    "vsce": "^2.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "components",
+    "unused",
+    "detector",
+    "cleanup",
+    "dependencies"
+  ]
+}
+
