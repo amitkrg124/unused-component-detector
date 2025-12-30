@@ -1,9 +1,10 @@
 {
   "name": "unused-component-detector",
-  "displayName": "Unused React Component Detector",
-  "description": "Find and safely delete unused React components from your codebase",
-  "version": "1.0.0",
+  "displayName": "Component Pruner",
+  "description": "Scan, detect and safely remove unused React components from your codebase. Boost performance by eliminating dead code.",
+  "version": "1.0.3",
   "publisher": "amitkrg124",
+  "icon": "icon.png",
   "author": {
     "name": "amitkrg124"
   },
@@ -19,7 +20,9 @@
     "color": "#1e1e1e",
     "theme": "dark"
   },
-  "activationEvents": [],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -73,7 +76,15 @@
     "unused",
     "detector",
     "cleanup",
-    "dependencies"
+    "dependencies",
+    "dead code",
+    "pruner",
+    "typescript",
+    "jsx",
+    "tsx",
+    "code cleanup",
+    "bundle size",
+    "performance"
   ]
 }
 

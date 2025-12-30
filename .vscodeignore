@@ -1,0 +1,14 @@
+.vscode/**
+.vscode-test/**
+.claude/**
+.git/**
+src/**
+**/*.ts
+**/*.map
+.gitignore
+tsconfig.json
+webpack.config.js
+node_modules/**
+*.vsix
+nul
+CHANGELOG.md
